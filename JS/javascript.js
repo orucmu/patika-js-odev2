@@ -7,7 +7,7 @@ let i=0;                                        //id ataması için değişken.(
 if(localStorage.getItem('load'))    //LocalStorage varsa gir
 {   
     ArrayTask = JSON.parse(localStorage.getItem('load')) //LocalStorage çağır
-    ArrayTask.forEach(function (element)                 //LocalStorage 'deki bilgiyi aktarmak için fonksiyon
+    ArrayTask.forEach(function (element)                 
     {
         i++;
         element.id = `id${i}`;                           //LocalStorage yeni id ataması
